@@ -37,7 +37,7 @@ minikube start --driver=docker
 pip install pandas scikit-learn kubernetes joblib
 
 # Deploy the Web Application
-kubectl create deployment webapp --image=nginx --replicas=3
+kubectl create deployment webapp --image=nginx --replicas=3  #or by using webapp.yaml file
 
 # Train the AI Model
 python3 train_model.py    #It will generate anomaly_detection_model.pkl
